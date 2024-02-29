@@ -37,15 +37,15 @@ Then request a certificate with something like:
 .. code-block:: bash
 
   $ certbot-auto certonly \
-    -a certbot-dns-he:dns-he --certbot-dns-he:dns-he-propagation-seconds 30 \
-    --certbot-dns-he:dns-he-credentials /home/me/dns_he.ini -d 'mydomain.com,*.mydomain.com' \
+    -a certbot-dns-hurricane-electric:dns-he --certbot-dns-hurricane-electric:dns-he-propagation-seconds 30 \
+    --certbot-dns-hurricane-electric:dns-he-credentials /home/me/dns_he.ini -d 'mydomain.com,*.mydomain.com' \
     --server https://acme-v02.api.letsencrypt.org/directory --agree-tos \
     --manual-public-ip-logging-ok --preferred-challenges dns -m me@email.com
 
 You're done!
 
-| ``--certbot-dns-he:dns-he-propagation-seconds`` controls the duration waited for the DNS record(s) to propagate.
-| ``--certbot-dns-he:dns-he-credentials`` specifies the configuration file path.
+| ``--certbot-dns-hurricane-electric:dns-he-propagation-seconds`` controls the duration waited for the DNS record(s) to propagate.
+| ``--certbot-dns-hurricane-electric:dns-he-credentials`` specifies the configuration file path.
 
 These are stored in cerbot's renewal configuration, so they'll work on your automatic renewals.
 
