@@ -1,4 +1,4 @@
-cerbot-dns-he
+certbot-dns-hurricane-electric
 ======================================
 
 `Hurricane Electric DNS <https://dns.he.net>`_ Authenticator plugin for `Certbot <https://certbot.eff.org>`_
@@ -8,7 +8,7 @@ cerbot-dns-he
 Installation
 ------------
 
-Install `cerbot-dns-he <https://pypi.org/project/certbot-dns-hurricane-electric/>`_ to your Certbot's environment with pip. For example, the line below works for me after running ``certbot-auto``.
+Install `certbot-dns-hurricane-electric <https://pypi.org/project/certbot-dns-hurricane-electric/>`_ to your Certbot's environment with pip. For example, the line below works for me after running ``certbot-auto``.
 
 .. code-block:: bash
 
