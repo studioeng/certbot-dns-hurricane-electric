@@ -23,8 +23,8 @@ Create a configuration file with your username and password:
 
 .. code-block:: ini
 
-  certbot_dns_hurricane_electric:dns_he_user = Your HE username
-  certbot_dns_hurricane_electric:dns_he_pass = Your HE password
+  certbot_dns_hurricane-electric:dns_he_user = Your HE username
+  certbot_dns_hurricane-electric:dns_he_pass = Your HE password
 
 and chmod it to ``600``:
 
@@ -37,10 +37,14 @@ Then request a certificate with something like:
 .. code-block:: bash
 
   $ certbot-auto certonly \
-    -a certbot-dns-hurricane-electric:dns-he --certbot-dns-hurricane-electric:dns-he-propagation-seconds 30 \
-    --certbot-dns-hurricane-electric:dns-he-credentials /home/me/dns_he.ini -d 'mydomain.com,*.mydomain.com' \
-    --server https://acme-v02.api.letsencrypt.org/directory --agree-tos \
-    --manual-public-ip-logging-ok --preferred-challenges dns -m me@email.com
+    -a certbot-dns-hurricane-electric:dns-he \
+    --certbot-dns-hurricane-electric:dns-he-propagation-seconds 30 \
+    --certbot-dns-hurricane-electric:dns-he-credentials /home/me/dns_he.ini \
+    -d 'mydomain.com,*.mydomain.com' \
+    --server https://acme-v02.api.letsencrypt.org/directory \
+    --agree-tos \
+    --manual-public-ip-logging-ok --preferred-challenges dns \
+    -m me@email.com
 
 You're done!
 
