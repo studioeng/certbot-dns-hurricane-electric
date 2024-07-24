@@ -50,14 +50,14 @@ setup(
         'Topic :: System :: Systems Administration',
         'Topic :: Utilities',
     ],
-    keywords='certbot dns hurricane-electric dns-01 authenticator api',
+    keywords='certbot dns hurricane electric dns-01 authenticator api',
 
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
     entry_points={
         'certbot.plugins': [
-            'dns-hurricane_electric = certbot_dns_hurricane_electric.dns_he:Authenticator',
+            'dns-hurricane-electric = certbot_dns_hurricaneelectric.dns_he:Authenticator',
         ],
     }
 )
