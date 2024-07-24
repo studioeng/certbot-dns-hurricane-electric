@@ -57,7 +57,7 @@ setup(
     install_requires=install_requires,
     entry_points={
         'certbot.plugins': [
-            'dns-hurricane_electric = certbot_dns_hurricane_electric.dns_hurricane_electric:Authenticator',
+            'dns-hurricane_electric = certbot_dns_hurricane_electric.dns_he:Authenticator',
         ],
     }
 )
